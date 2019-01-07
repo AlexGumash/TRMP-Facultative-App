@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    tools:context=".fragments.FragmentInfo">
+
+    <TextView
+        android:id="@+id/tvInformation"
+        style="@style/BigFont"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/information_about_phone" />
+
+    <TextView
+        android:id="@+id/wifiIpTV"
+        style="@style/NormalFont"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/wifiIP" />
+
+    <TextView
+        android:id="@+id/mobileIpTV"
+        style="@style/NormalFont"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/mobileIP" />
+
+    <TextView
+        android:id="@+id/tvModel"
+        style="@style/NormalFont"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/model" />
+
+    <TextView
+        android:id="@+id/tvVersion"
+        style="@style/NormalFont"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/version" />
+</LinearLayout>
