@@ -49,6 +49,6 @@ TRMP Facultative App
   
 ## Графический макет с логическими переходами
 
-![Layout](layout.png)
+![Layout](Layout.png)
 
 
