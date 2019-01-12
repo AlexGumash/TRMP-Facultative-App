@@ -49,6 +49,20 @@ TRMP Facultative App
   
 ## Графический макет с логическими переходами
 
-![Layout](layout.png)
+![Layout](Layout.png)
 
+## Описание используемых API
+
+[GitHub API](https://developer.github.com/v3/).
+Было использовано 3 метода:
+- Получение access token
+- Получение списка репозиториев пользователя
+- Получение авторизованного пользователя
+
+[Yandex Maps](https://github.com/yandex/mapkit-android-demo/tree/master/src/main/java/com/yandex/mapkitdemo)
+Благодаря данному API была реализована функция отображения маршрута от дома до университета.
+
+[Retrofit](https://square.github.io/retrofit/)
+Данная библиотека позволяет легко создавать HTTP-клиент для работы с сетью (осуществлять GET, POST запросы и т.д.)
+Также была применена библиотека для автоматического распарсивания ответов с сервера в GSON.
 
