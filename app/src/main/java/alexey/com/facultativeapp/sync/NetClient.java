@@ -59,7 +59,7 @@ public class NetClient {
     Методы, реализующие различные запросы
     Получение accessToken
     Получение списка репозиториев
-    Получение пользователя по токену
+    Получение авторизованного пользователя
     Выход пользователя из приложения
      */
     public void getAccessToken(String clientId, String clientSecret, String code, Callback<AccessToken> callback) {

@@ -33,7 +33,7 @@ public interface Api {
             @Field("code") String code);
 
     /*
-    Получение пользователя по токену
+    Получение авторизованного пользователя
      */
     @GET("/user")
     Call<User>getCurrentUser();
