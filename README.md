@@ -119,7 +119,7 @@ MVP( Model - View - Presenter) - шаблон проектирования по�
     
 При переходе на раздел со списком контактов или раздел с сенсорами приложение проверяет наличие разрешений.
 
-- Разрешение на список контактов:
+Разрешение на список контактов:
 
     private void permissionsRequest() {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M &&
@@ -131,14 +131,14 @@ MVP( Model - View - Presenter) - шаблон проектирования по�
         }
     }
     
-- Разрешение на использование сенсоров:
+Разрешение на использование сенсоров:
 
     if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M &&
                 ActivityCompat.checkSelfPermission(getContext(), Manifest.permission.WRITE_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED &&
                 ActivityCompat.checkSelfPermission(getContext(), Manifest.permission.READ_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED) {
             requestPermissions(new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE, Manifest.permission.READ_EXTERNAL_STORAGE}, 1);
         }
-        
+
 Изменение показаний сенсора
 
     listener = new SensorEventListener() {
