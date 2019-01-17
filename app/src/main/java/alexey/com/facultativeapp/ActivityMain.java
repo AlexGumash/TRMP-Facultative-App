@@ -124,7 +124,6 @@ public class ActivityMain extends AppCompatActivity
     private void logOut() {
         Intent intent = new Intent(this, ActivityAuth.class);
         startActivity(intent);
-
     }
 
     private void finishActivity() {

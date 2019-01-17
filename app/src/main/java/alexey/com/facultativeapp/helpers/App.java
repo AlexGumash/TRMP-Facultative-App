@@ -22,7 +22,7 @@ public class App extends Application {
     private static final String APP_ID = "961773";
     private static final String AUTH_URL = "https://github.com/";
     private static final String BASE_URL = "https://api.github.com/";
-    private static final String cliendId = "cbd21af15d229c70275a";
+    private static final String clientId = "cbd21af15d229c70275a";
     private static final String clientSecret = "35e0e737fffebfce6a0f4bc38042af283c357388";
     private static final String redirectUri = "alexey.com.facultativeapp://callback"; //callback для окончания авторизации
 
@@ -84,14 +84,6 @@ public class App extends Application {
         return sharedPreferences.getString(String.valueOf(R.string.token), null);
     }
 
-    public static void clearAccessToken() {
-        sharedPreferences.edit().putString(String.valueOf(R.string.token), null).apply();
-    }
-
-    public static void clearUserName(String userName) {
-        sharedPreferences.edit().putString(String.valueOf(R.string.username), userName).apply();
-    }
-
     public static void setUsername(String username) {
         USERNAME = username;
         sharedPreferences.edit().putString(String.valueOf(R.string.username), username).apply();
@@ -100,8 +92,8 @@ public class App extends Application {
     /*
     Методы получения различных данных
      */
-    public static String getCliendId() {
-        return cliendId;
+    public static String getClientId() {
+        return clientId;
     }
 
     public static String getClientSecret() {
@@ -116,7 +108,4 @@ public class App extends Application {
         return USERNAME;
     }
 
-    public static String getAppId() {
-        return APP_ID;
-    }
 }

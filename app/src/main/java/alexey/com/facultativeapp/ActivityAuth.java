@@ -44,7 +44,7 @@ public class ActivityAuth extends AppCompatActivity {
     }
 
     private void signIn() {
-        String myUrlGit = "https://github.com/login/oauth/authorize?client_id=" + App.getCliendId() +
+        String myUrlGit = "https://github.com/login/oauth/authorize?client_id=" + App.getClientId() +
                 "&scope=repo&redirect_uri=" + App.getRedirectUri();
         Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(myUrlGit));
         startActivity(intent);
@@ -64,7 +64,7 @@ public class ActivityAuth extends AppCompatActivity {
             Если успешно, то он записывается в память приложения.
             Также записывается имя пользователя
              */
-            App.getNetClient().getAccessToken(App.getCliendId(), App.getClientSecret(), code, new Callback<AccessToken>() {
+            App.getNetClient().getAccessToken(App.getClientId(), App.getClientSecret(), code, new Callback<AccessToken>() {
                 @Override
                 public void onResponse(Call<AccessToken> call, Response<AccessToken> response) {
                     if (response.isSuccessful()) {

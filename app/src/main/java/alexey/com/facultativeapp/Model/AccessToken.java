@@ -17,7 +17,4 @@ public class AccessToken {
         return accessToken;
     }
 
-    public String getTokenType() {
-        return tokenType;
-    }
 }
